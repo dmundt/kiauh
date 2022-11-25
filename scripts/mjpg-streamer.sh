@@ -20,8 +20,8 @@ function install_mjpg-streamer() {
   local webcam_txt="${KIAUH_SRCDIR}/resources/mjpg-streamer/webcam.txt"
   local service="${KIAUH_SRCDIR}/resources/mjpg-streamer/webcamd.service"
   local repo="https://github.com/jacksonliam/mjpg-streamer.git"
-  local KLIPPER_CONFIG="/home/pi/printer_data/config"
-  local KLIPPER_LOGS="/home/pi/printer_data/logs"
+  local KLIPPER_CONFIG="/home/%USER%/printer_data/config"
+  local KLIPPER_LOGS="/home/%USER%/printer_data/logs"
   
   ### return early if webcamd.service already exists
   if [[ -f "${SYSTEMD}/webcamd.service" ]]; then
